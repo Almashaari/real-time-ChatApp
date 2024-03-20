@@ -19,7 +19,7 @@ function Auth({setIsAuth}) {
             <div className="modal-dialog" role="document">
                 <div className="modal-content rounded-4 shadow bg-transparent">
                     <div className="modal-header p-5 pb-4 border-bottom-0">
-                    <h4 className="fw-bold "> Sign In With Google To Continue </h4>
+                    <h4 className="fw-bold text-light"> Sign In With Google To Continue </h4>
                     </div>
                     <div className="modal-body p-5 pt-0">
                             <button className="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit" onClick={signInWithGoogle}> Sign In with Google </button>

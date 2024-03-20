@@ -5,14 +5,14 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyADKRc4EOnlFxDvF_tkhktC5wbHn4q8uZA",
-    authDomain: "chat-app-ad38b.firebaseapp.com",
-    projectId: "chat-app-ad38b",
-    storageBucket: "chat-app-ad38b.appspot.com",
-    messagingSenderId: "946767983867",
-    appId: "1:946767983867:web:54952ded7a161bf8ecec5e",
-    measurementId: "G-3KQ1VQN104"
-};
+    apiKey: "AIzaSyCrV3FKvjLxe2Cbbb8rY-FinDSzJwKorBE",
+    authDomain: "chat-app-3e86a.firebaseapp.com",
+    projectId: "chat-app-3e86a",
+    storageBucket: "chat-app-3e86a.appspot.com",
+    messagingSenderId: "929604297538",
+    appId: "1:929604297538:web:de15b1ab5356520cec5edb",
+    measurementId: "G-VRHCJ6KH1B"
+  };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
