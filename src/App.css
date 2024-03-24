@@ -3,6 +3,11 @@ body {
     margin: 0;
   }
   
+  .test-container {
+
+    margin: 0 auto;  /* Added for horizontal centering */
+  }
+  
   .App {
     display: flex;
     align-items: center;
@@ -21,41 +26,6 @@ body {
   
   .app-container {
     margin-top: 50px;
-  }
-  
-  .room {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .room label {
-    text-align: center;
-    font-size: 25px;
-    margin-bottom: 20px;
-  }
-  
-  .room input {
-    width: 200px;
-    height: 30px;
-    border: 2px solid #3b5998;
-    border-radius: 6px;
-    padding-left: 5px;
-    font-size: 20px;
-    text-align: center;
-    margin: 5px;
-  }
-  .room button {
-    width: 210px;
-    height: 40px;
-    border: none;
-    border-radius: 6px;
-    padding-left: 5px;
-    font-size: 20px;
-    text-align: center;
-    margin: 5px;
-    background-color: #3b5998;
-    color: white;
-    cursor: pointer;
   }
   
   .sign-out {

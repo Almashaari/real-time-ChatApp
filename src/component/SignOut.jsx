@@ -1,26 +1,21 @@
 import { signOut } from "firebase/auth";
-import { auth } from "../firebase-config.js";
-
+import React from 'react';
 import Cookies from "universal-cookie";
-
+import { auth } from "../firebase-config.js";
 const cookies = new Cookies();
 
-export const SignOut = ({ children, isAuth, setIsAuth, setIsInChat }) => {
+function SignOut({ children, isAuth, setIsAuth }) {
   const signUserOut = async () => {
     await signOut(auth);
     cookies.remove("auth-token");
     setIsAuth(false);
-    setIsInChat(false);
   };
-
   return (
-    <div className="App">
-      <div className="app-container">{children}</div>
+    <div className="app-container">
       {isAuth && (
-        <div className="sign-out">
-          <button onClick={signUserOut}> Sign Out</button>
-        </div>
+          <button class="btn btn-primary" onClick={signUserOut}>Sign Out</button>
       )}
+      {children}
     </div>
   );
 };
